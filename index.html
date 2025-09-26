@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ELLE DALSING — Portfolio</title>
+  <title>Elle Dalsing — Portfolio</title>
 
   <!-- Google font (replace if you prefer another) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -65,3 +65,231 @@
       font-weight:600;
       letter-spacing:0.04em;
       font-size:14px;
+      color:var(--muted);
+      margin-top:4px;
+    }
+
+    /* left column content */
+    aside{
+      padding-top:6px;
+    }
+
+    .contact{
+      margin-top:18px;
+      font-size:14px;
+      color:var(--muted);
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .contact a{
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .section-title{
+      margin-top:22px;
+      font-size:12px;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+      font-weight:700;
+    }
+
+    .skills{
+      margin-top:10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 12px;
+    }
+
+    .skill-pill{
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:13px;
+      background:#f6f6f6;
+      color:var(--text);
+      font-weight:600;
+      border:1px solid #eee;
+    }
+
+    /* right column main */
+    main{
+      padding:8px 6px 6px 10px;
+    }
+
+    .headline{
+      font-size:18px;
+      font-weight:700;
+      margin:2px 0 12px 0;
+    }
+
+    .lede{
+      font-size:15px;
+      color:var(--muted);
+      margin:0 0 18px 0;
+      max-width:60ch;
+    }
+
+    .card{
+      border-top:3px solid transparent;
+      padding:12px 0 18px 0;
+      margin-bottom:20px;
+    }
+
+    .job{
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:flex-start;
+    }
+
+    .job .meta{
+      font-weight:700;
+      letter-spacing:0.02em;
+      text-transform:uppercase;
+      font-size:13px;
+    }
+
+    .job .loc{
+      font-size:13px;
+      color:var(--muted);
+      margin-top:4px;
+    }
+
+    .job .desc{
+      margin-top:8px;
+      color:var(--text);
+      font-size:14px;
+      max-width:72ch;
+    }
+
+    .dates{
+      text-align:right;
+      color:var(--muted);
+      font-size:13px;
+      min-width:130px;
+    }
+
+    /* Cover letter block style */
+    .cover{
+      font-size:15px;
+      line-height:1.6;
+      color:var(--text);
+      white-space:pre-wrap;
+    }
+
+    footer{
+      margin-top:28px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width:880px){
+      .wrap{
+        grid-template-columns: 1fr;
+        padding:20px;
+      }
+      .bigname{font-size:36px}
+      .dates{display:none}
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap" role="main" aria-labelledby="nameHeading">
+
+    <!-- LEFT COLUMN -->
+    <aside>
+      <div class="brand">
+        <h1 id="nameHeading" class="bigname">Elle<br/>Dalsing</h1>
+        <div class="sub">Graphic Designer — Branding · Editorial · Experiments</div>
+      </div>
+
+      <div class="contact" aria-label="Contact">
+        <a href="https://www.elledalsing.com" target="_blank" rel="noopener">www.elledalsing.com</a>
+        <a href="mailto:elledalsing@gmail.com">elledalsing@gmail.com</a>
+        <div>435.654.8301</div>
+      </div>
+
+      <div class="section-title">Skills</div>
+      <div class="skills" role="list">
+        <div class="skill-pill">Adobe Creative Cloud</div>
+        <div class="skill-pill">After Effects</div>
+        <div class="skill-pill">UI/UX Design</div>
+        <div class="skill-pill">Product Design</div>
+        <div class="skill-pill">Print Production</div>
+        <div class="skill-pill">Microsoft Office</div>
+      </div>
+
+      <div class="section-title">Education</div>
+      <div style="margin-top:10px;">
+        <div style="font-weight:700">BFA — Graphic Design</div>
+        <div style="color:var(--muted); margin-top:6px;">Utah Valley University · Spring 2026</div>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT COLUMN -->
+    <main>
+      <div class="headline">Experience</div>
+
+      <section class="card" aria-labelledby="exp1">
+        <div class="job" id="exp1">
+          <div>
+            <div class="meta">doTERRA — Internal Company Culture Designer</div>
+            <div class="loc">Pleasant Grove, UT</div>
+            <div class="desc">Design internal campaigns and visuals to support positive company culture and team engagement. Translate company values into clear, cohesive visual systems and communication assets across digital, print, and environmental media.</div>
+          </div>
+          <div class="dates">Feb 2023 — Present</div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="exp2">
+        <div class="job" id="exp2">
+          <div>
+            <div class="meta">The UVU Review — Lead Layout Designer</div>
+            <div class="loc">Orem, UT</div>
+            <div class="desc">Designed print and digital newspaper layouts, established consistent visual identity across sections, and collaborated with writers and photographers to strengthen storytelling and audience engagement.</div>
+          </div>
+          <div class="dates">Aug 2022 — Aug 2025</div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="exp3">
+        <div class="job" id="exp3">
+          <div>
+            <div class="meta">Ignition Graphics — Graphic Designer</div>
+            <div class="loc">Heber City, UT</div>
+            <div class="desc">Created promotional materials and client-facing visuals in a design agency environment, balancing creativity with functionality and delivering on-brand collateral.</div>
+          </div>
+          <div class="dates">May 2022 — Aug 2024</div>
+        </div>
+      </section>
+
+      <div class="headline">A short letter</div>
+      <div class="card cover" role="article" aria-label="Cover letter excerpt">
+        <strong>Dear hiring team—</strong>
+
+        <p>I’m Elle, a graphic designer focused on creating work that connects with people and culture. I design experiences through branding, editorial layouts, and experimental projects that explore how visuals can shape interaction and perception. I approach each project with curiosity and adaptability, exploring ideas that communicate meaningfully and leave an impression.</p>
+
+        <p>As Layout Editor for the UVU Review, I led a full redesign across print, web and social platforms, creating a unified identity that strengthened reach and improved engagement. I develop cohesive visual systems and manage multi-platform projects — skills I’m excited to bring to your team.</p>
+
+        <p>Sincerely, <br/><em>Elle</em></p>
+      </div>
+
+      <footer>
+        <div style="font-weight:700">Want to see work?</div>
+        <div style="margin-top:6px; color:var(--muted)">Portfolio and projects are available at <a href="https://www.elledalsing.com" target="_blank" rel="noopener">elledalsing.com</a>. Replace this link with your project pages or case studies.</div>
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
